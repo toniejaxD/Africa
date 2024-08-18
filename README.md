@@ -7,8 +7,11 @@ The African application was developed as part of a credit project in a computer 
 The app offers users several key functionalities:
 
 -Viewing Animal Data: Users can view information on various African animal species. The app allows data to be filtered by kingdom (e.g. mammals, reptiles) and diet type (e.g. herbivores, carnivores).
+
 -Detail pages: Each animal has its own page with detailed information, including a description, photos and additional scientific data.
+
 -Basket function: The app includes a simple basket function where users can add animals of interest to a personal list.
+
 -Data Management: Administrators can add new records, such as animals, kingdoms or types, and delete existing data.
 
 3 Technologies:
@@ -16,8 +19,11 @@ The app offers users several key functionalities:
 The application was built using the following technologies:
 
 -Programming Language: PHP - used for dynamic page generation and application logic handling.
+
 -Database: MySQL - storing and managing animal, user and session data.
+
 -Front-End: HTML and CSS - creating and styling the user interface for clarity and ease of navigation.
+
 -PHP Sessions: Used to manage user status, enabling logins and basket personalisation.
 
 4 Why Africa?
