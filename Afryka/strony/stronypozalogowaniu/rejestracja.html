@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+	
+	<title>Rejestracja</title>
+	
+
+
+	<meta charset="UTF-8">
+	<meta name="description" content="Informacje o zwierzętach">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Karol Kołodyński P3">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="StyleSheet" type="text/css" href="css/style_logowaniee.css">
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	
+	<script>
+      $(function() {
+
+         $("#blad_imienia").hide();
+         $("#blad_nazwiska").hide();
+         $("#blad_emaila").hide();
+         $("#blad_hasla").hide();
+         $("#blad_ponownego_hasla").hide();
+
+         var error_imienia = false;  
+         var error_nazwiska = false;
+         var error_emaila = false;
+         var error_hasla = false;
+         var error_ponownego_hasla = false;
+
+         $("#imie").focusout(function(){
+            sprawdzenie_imienia();
+         });
+         $("#nazwisko").focusout(function() {
+            sprawdzenie_nazwiska();
+         });
+         $("#email").focusout(function() {
+            sprawdzenie_emaila();
+         });
+         $("#haslo").focusout(function() {
+            sprawdzenie_hasla();
+         });
+         $("#ponowne_haslo").focusout(function() {
+            sprawdzenie_ponownego_hasla();
+         });
+
+         function sprawdzenie_imienia() { 
+            var znak = /^[a-zA-Z]*$/;  
+            var imie = $("#imie").val();
+            if (znak.test(imie) && imie !== '') {
+               $("#blad_imienia").hide();
+               $("#imie").css("border-bottom","2px solid #34F458");  
+            } else {
+               $("#blad_imienia").html("Powinien zawierać tylko znaki!"); 
+               $("#blad_imienia").show();
+               $("#imie").css("border-bottom","2px solid #F90A0A");
+               error_imienia = true;
+            }
+         }
+
+         function sprawdzenie_nazwiska() { 
+            var znak = /^[a-zA-Z]*$/;
+            var nazwisko = $("#nazwisko").val()
+            if (znak.test(nazwisko) && nazwisko !== '') {
+               $("#blad_nazwiska").hide();
+               $("#nazwisko").css("border-bottom","2px solid #34F458");
+            } else {
+               $("#blad_nazwiska").html("Powinien zawierać tylko znaki!");
+               $("#blad_nazwiska").show();
+               $("#nazwisko").css("border-bottom","2px solid #F90A0A");
+               error_nazwiska = true;
+            }
+         }
+
+         function sprawdzenie_hasla() {
+            var dlugosc_hasla = $("#haslo").val().length;
+            if (dlugosc_hasla < 8) { 
+               $("#blad_hasla").html("Powinno zawierać 8 znaków!");
+               $("#blad_hasla").show();
+               $("#haslo").css("border-bottom","2px solid #F90A0A");
+               error_hasla = true;
+            } else {
+               $("#blad_hasla").hide();
+               $("#haslo").css("border-bottom","2px solid #34F458");
+            }
+         }
+
+         function sprawdzenie_ponownego_hasla() {
+            var haslo = $("#haslo").val();
+            var powtorzenie_hasla = $("#ponowne_haslo").val();
+            if (haslo !== powtorzenie_hasla) { 
+               $("#blad_ponownego_hasla").html("Hasło nie pasuje!");
+               $("#blad_ponownego_hasla").show();
+               $("#ponowne_haslo").css("border-bottom","2px solid #F90A0A");
+               error_ponownego_hasla = true;
+            } else {
+               $("#blad_ponownego_hasla").hide();
+               $("#ponowne_haslo").css("border-bottom","2px solid #34F458");
+            }
+         }
+
+         function sprawdzenie_emaila() {
+            var znak = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+            var email = $("#email").val();
+            if (znak.test(email) && email !== '') {
+               $("#blad_emaila").hide();
+               $("#email").css("border-bottom","2px solid #34F458");
+            } else {
+               $("#blad_emaila").html("Niepoprawny e-mail!");
+               $("#blad_emaila").show();
+               $("#email").css("border-bottom","2px solid #F90A0A");
+               error_emaila = true;
+            }
+         }});
+   </script>
+
+</head>
+
+
+<body>
+
+<form id="registration_form" action="../../skrypty/skrypt_rejestracja.php" method="POST">
+<div class="tło_prowadzenie">
+
+<h1>Rejestracja</h1>
+
+<div class="prowadzenie">
+<input type="text" placeholder="Podaj imię" id="imie" name="imie">
+<span class="error_form" id="blad_imienia"></span>
+</div>
+<div class="prowadzenie">
+<input type="text" placeholder="Podaj nazwisko" id="nazwisko" name="nazwisko">
+<span class="error_form" id="blad_nazwiska"></span>
+</div>
+
+<div class="prowadzenie">
+<input type="email" placeholder="Podaj e-mail" id="email" name="email">
+<span class="error_form" id="blad_emaila"></span>
+</div>
+
+<div class="prowadzenie">
+<input type="password" placeholder="Podaj hasło" id="haslo" name="haslo">
+<span class="error_form" id="blad_hasla"></span>
+</div>
+
+<div class="prowadzenie">
+<input type="password" placeholder="Podaj ponownie hasło" id="ponowne_haslo">
+<span class="error_form" id="blad_ponownego_hasla"></span>
+</div>
+
+<input type="submit" class="logowaniesie" value="Zarejestruj się">
+
+</div>
+
+</form>
+
+</body>
+</html>

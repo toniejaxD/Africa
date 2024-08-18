@@ -1,0 +1,278 @@
+body, html
+{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	
+}
+
+nav
+{
+	
+   
+	width: 100%;
+	height: 55px;
+	border-radius: 10px;
+
+
+
+	background: rgba(0,0,0,0.8);
+
+	color: #fff;
+	box-shadow: 0 0 20px 2px rgba(0,0,0,0.5);
+}
+
+nav #menu_zalogowanie
+{
+	float: left;
+}
+
+
+#menu_list_pozycja{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    float: left;
+	
+}
+
+#menu_list_pozycja a{
+	display: block;
+	padding: 0 0px 0 0px;
+	color: white;
+    text-decoration: none;
+	font-family: sans-serif;	
+}
+
+#menu_list_pozycja {
+	list-style: none;
+    display: inline-block;
+    height: 55px;
+	line-height: 55px;
+	border-radius: 10px;
+	transition: 0.9s;	
+}
+
+#menu_list_pozycja:hover{
+		background: rgb(230, 230, 230);
+	
+}
+
+ nav #menu_formularz_logo
+{
+	float: right;	
+}
+#menu_list_pozycja_formularz
+{
+	 height: 100%;
+    padding: 0;
+    margin: 0;
+    float: right;
+	
+}
+#menu_list_pozycja_formularz a
+{
+	display: block;
+	padding: 0 0px 0 0px;
+	color: white;
+    text-decoration: none;
+	font-family: sans-serif;
+}
+
+#menu_list_pozycja_formularz 
+{
+	list-style: none;
+    display: inline-block;
+    height: 55px;
+	line-height: 55px;
+	border-radius: 10px;
+	transition: 0.9s;
+	
+}
+#menu_list_pozycja_formularz:hover
+{
+	
+	background: rgb(230, 230, 230);
+}
+main
+{
+text-align: center;
+
+
+width: 100%;
+	height:110px;
+	font-family: sans-serif;
+
+}
+
+#main2
+{
+		background: white;
+	text-align: center;
+	
+	border-radius: 10px;
+	position: relative;
+	font-family: sans-serif;
+	
+	
+}
+
+
+#menu_zwierzat_pozycja
+{
+	list-style: none;
+	padding: 5px;
+	height:150px;
+	width:100%;
+}
+
+
+#menu_zwierzat_pozycja a
+{
+	display: block;
+	
+	font-size: 17px;
+    text-decoration: none;
+	font-family: Impact;
+
+	color: #d1d1e0;
+
+	
+	
+}
+
+#menu_zwierzat
+{
+	margin-top: 50px;
+ 	padding: 0 400px 0 400px;
+	height: 370px;
+	border-radius: 10px;
+   
+	
+	background: rgba(102,102,102,102);
+	
+	
+	box-shadow: 0 0 20px 2px rgba(0,0,0,0.5);
+	
+}
+
+#menu_zwierzat_pozycja li:hover{
+	
+	background: rgba(0,0,0,0.8);
+	
+	
+	color: #fff;
+	box-shadow: 0 0 20px 2px rgba(0,0,0,0.5);
+}
+#menu_zwierzat ul li
+{
+
+	background-color: white;
+	margin: 20px;
+
+}
+#menu_zwierzat_pozycja li
+{
+	padding: 0;
+	list-style: none;
+	border-radius: 9px;
+	transition: 0.5s;
+	
+}
+
+
+
+footer
+{	
+ width: 100%; 
+
+	border-radius: 5px;
+	
+	background: rgba(0,0,0,0.8);
+
+	color: #fff;
+	box-shadow: 0 0 20px 2px rgba(0,0,0,0.5);
+	font-family: sans-serif;
+}
+
+.main-table-div {
+	padding: 50px;
+}
+
+.main-table-div form{
+	padding: 50px;
+}
+
+.main-table-div form table{
+	margin: auto;
+}
+
+.main-table-div form button{
+	margin: 20px;
+}
+
+.main-table-div select {
+	margin-right: 20px;
+}
+
+hr {
+	margin: 20px;
+}
+
+.main-table {
+	width: 80%;
+	margin: auto;
+}
+
+.main-table tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+
+.main-table, .main-table tr, .main-table td {
+	border: 2px solid grey;
+	border-collapse: collapse;
+}
+
+.tables-flex {
+	display: flex;
+}
+
+.komunikat {
+	margin-top: 20px;
+}
+
+.main-table-select {
+	margin-top: 3rem;
+}
+
+.lista {
+	padding-top: 3rem;
+	display: flex;
+	justify-content: space-around;
+}
+
+.element {
+	border: 2px solid black;
+	width: 10rem;
+	height: 15rem;
+}
+
+.element img{
+	width: 100%;
+	height: 70%;
+}
+
+.element h3{
+	width: 100%;
+	height: 5%;
+}
+
+.element button{
+	height: 15%;
+}
+
+.flex {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}

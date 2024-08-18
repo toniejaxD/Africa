@@ -1,0 +1,144 @@
+body, html
+{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	
+	font-family: sans-serif;
+}
+table, th, td {
+
+ 
+	border-radius: 10px;
+	box-shadow: 0 0 5px 2px rgba(0,0,0,0.5);
+	font-family: sans-serif;
+}
+
+
+nav
+{
+	
+
+	-webkit-box-shadow: 0 4px 25px 0 rgb(0 0 0 / 10%);
+   
+	width: 100%;
+	height: 45px;
+	border-radius: 10px;
+
+
+
+	background: rgba(0,0,0,0.8);
+
+	color: #fff;
+	box-shadow: 0 0 20px 2px rgba(0,0,0,0.5);
+}
+
+nav #tytul
+{
+	text-align:center;
+	
+
+}
+
+main
+{
+text-align: center;
+
+width: 100%;
+height:110px;	
+	font-family: sans-serif;
+
+}
+
+#main2
+{
+		background: white;
+	text-align: center;
+	
+	border-radius: 10px;
+	position: relative;
+	font-family: sans-serif;
+	
+	
+}
+
+#menu_zwierzat_pozycja
+{
+	list-style: none;
+	padding: 5px;
+	height:175px;
+	width:100%;
+}
+
+
+#menu_zwierzat_pozycja a
+{
+	display: block;
+	
+	font-size: 17px;
+    text-decoration: none;
+	font-family: Impact;
+
+	color: #d1d1e0;
+	
+}
+
+#menu_zwierzat
+{
+	margin-top: 40px;
+ 	padding: 0 400px 0 400px;
+	height: 320px;
+	border-radius: 10px;
+   
+	
+	background: rgba(102,102,102,102);
+	
+	
+	box-shadow: 0 0 20px 2px rgba(0,0,0,0.5);
+	
+}
+
+#menu_zwierzat_pozycja li:hover{
+	
+	background: rgba(0,0,0,0.8);
+	
+	
+	color: #fff;
+	box-shadow: 0 0 20px 2px rgba(0,0,0,0.5);
+}
+#menu_zwierzat ul li
+{
+
+	background-color: white;
+	margin: 40px;
+	
+}
+#menu_zwierzat_pozycja li
+{
+	padding: 0;
+	list-style: none;
+	border-radius: 9px;
+	transition: 0.5s;
+	
+}
+
+
+
+footer
+{	
+ width: 100%; 
+ height:35px;
+
+	border-radius: 5px;
+	
+	background: rgba(0,0,0,0.8);
+
+	color: #fff;
+	box-shadow: 0 0 20px 2px rgba(0,0,0,0.5);
+	font-family: sans-serif;
+	
+}
+
+
+
+
